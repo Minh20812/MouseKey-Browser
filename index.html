@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trình duyệt bàn phím chuột</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>🖱️ Trình duyệt chỉ dùng chuột</h1>
+
+    <div class="container">
+      <div class="url-bar">
+        <div class="url-display" id="url-display">
+          <span class="placeholder">Nhập địa chỉ web...</span
+          ><span class="cursor"></span>
+        </div>
+        <button class="btn-ctrl" id="btn-del" title="Xóa ký tự cuối">⌫</button>
+        <button class="btn-ctrl" id="btn-clr" title="Xóa tất cả">✕</button>
+        <button class="btn-go" id="btn-go">Truy cập ↗</button>
+      </div>
+
+      <div class="quick-btns">
+        <span class="quick-label">Gợi ý nhanh:</span>
+        <button class="qbtn" data-val="https://">https://</button>
+        <button class="qbtn" data-val="http://">http://</button>
+        <button class="qbtn" data-val="www.">www.</button>
+        <button class="qbtn" data-val=".com">.com</button>
+        <button class="qbtn" data-val=".vn">.vn</button>
+        <button class="qbtn" data-val=".net">.net</button>
+        <button class="qbtn" data-val=".org">.org</button>
+        <button class="qbtn" data-val=".io">.io</button>
+        <button class="qbtn" data-val=".cc">.cc</button>
+        <button class="qbtn" data-val="google.com">google.com</button>
+        <button class="qbtn" data-val="youtube.com">youtube.com</button>
+        <button class="qbtn" data-val="facebook.com">facebook.com</button>
+        <button class="qbtn" data-val="github.com">github.com</button>
+        <button class="qbtn" data-val="wikipedia.org">wikipedia.org</button>
+      </div>
+
+      <div class="keyboard" id="kb">
+        <div class="row" id="r1"></div>
+        <div class="row" id="r2"></div>
+        <div class="row" id="r3"></div>
+        <div class="row" id="r4"></div>
+        <div class="row" id="r5"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
